@@ -3,6 +3,16 @@ body {
   font-family: "Roboto";
   font-style: normal;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0px;
+  padding: 0px;
+}
 .container {
   /* Ширина контейнеру, ширина сайту типу */
   width: 1170px;
@@ -14,6 +24,8 @@ body {
 /* Відключаємо точки від всіх списків  ul тому що вони не потрібні*/
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 /* Відключаємо підкреслення посилась фіол.лінією */
 a {
@@ -66,6 +78,9 @@ header {
   margin-left: auto;
 
 }
+.header-contact-item + .header-contact-item {
+  margin-left: 50px;
+}
 /* Пропишемо властивості елементів списку контактів */
 .contacts-list-item {
   font-weight: 500;
@@ -74,7 +89,7 @@ header {
   letter-spacing: 0.02em;
   font-style: normal;
   color: #757575;
-  margin-left: 50px;
+  /* margin-left: 50px; */
 }
 .contacts-list-item + .contacts-list-item {
   margin-left: 50px;
