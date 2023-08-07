@@ -1,0 +1,223 @@
+/* Даємо баді (для всій сторінки сайту) шрифт Roboto, тому що він на всій сторінці окрім лого якому ми потім дамо шрифт */
+body {
+  font-family: "Roboto";
+  font-style: normal;
+}
+.container {
+  /* Ширина контейнеру, ширина сайту типу */
+  width: 1170px;
+  /* Внутрішній відступ між цини червоними колонками типу, по 15px тому що зліва і зправа і в сумі 30px відступ короче */
+  padding: 0px 15px;
+  /* Це типу для центрування горизонтального ну типу відступ з обох боків рівний і ось */
+  margin: 0 auto;
+}
+/* Відключаємо точки від всіх списків  ul тому що вони не потрібні*/
+ul {
+  list-style: none;
+}
+/* Відключаємо підкреслення посилась фіол.лінією */
+a {
+  text-decoration: none;
+}
+
+header {
+  width: 1600px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  outline: 1px solid red;
+  
+}
+
+.header-position {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  margin-left: 92px;
+}
+/* Робимо логотип як на макеті ( не забуваємо дати йому інший шрифт Raleway, також прописуємо line height індексом )*/
+.logo-header-link {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+/* Прописуємо властивості для всіх елементів списка неву */
+.nav-list-item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: #212121;
+  margin-left: 55px;
+}
+/* Пропишемо ховер (при наведені зміну коліру текста) */
+.nav-list-item:hover {
+  color: #2196f3;
+}
+.contacts-list {
+  display: flex;
+  margin-left: auto;
+
+}
+/* Пропишемо властивості елементів списку контактів */
+.contacts-list-item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  font-style: normal;
+  color: #757575;
+  margin-left: 50px;
+}
+.contacts-list-item + .contacts-list-item {
+  margin-left: 50px;
+}
+/* Також пропишемо ховер */
+.contacts-list-item:hover {
+  color: #2196f3;
+}
+.heading {
+  /* width: 1600px; */
+  background-color: #2F303A;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  /* padding-left: 452px;
+  padding-right: 452px; */
+}
+
+/* Пропишемо властивості для заголовку ( Не буде відображатися тому що колір білий, як і колір фону ) */
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+  width: 696px;
+}
+/* Добавимо властивості для кнопки */
+.order-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: #ffffff;
+}
+.lists-container {
+  margin-top: 110px;
+}
+/* Скриваємо текст в h2 */
+.subtitle {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+/* Прописуємо властивості для 4 наших блоків з нашими якостями */
+.frame-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
+
+}
+/* А також для 4 підзаголовками */
+.frame-subtitle {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: #757575;
+  margin-top: 10px;
+}
+/* Тепер пропишемо для заголовку де буде інший блок з фото */
+.our-job-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+/* А тепер для заголовку для іншого блоку з фотографіями кого-сь */
+.our-team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+/* Тепер добавимо властивості для ФІ під фото (приберемо text-align: center; як в макеті тому що поки не добавили карточку для фото ФІ, позиції, добавими пізніше */
+.titlename {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+/* А тепер для посади */
+.position {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+footer {
+  height: 250px;
+  width: 1600px;
+  background-color: #2F303A;
+}
+.h3-footer {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+}
+/* Добавимо в футері властивості для фіз. адреси */
+.footer-subtitle {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  font-style: normal;
+}
+/* Та властивості для телефону та пошти */
+.footer-subtitle1 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.qualities-list {
+  display: flex;
+}
+.qualities-list-item {
+  margin: 30px;
+}
+.our-job-photo-list {
+  display: flex;
+}
+.our-job-photo-list-item {
+  margin: 30px;
+}
