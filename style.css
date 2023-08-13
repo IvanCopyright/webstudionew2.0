@@ -33,11 +33,9 @@ a {
 }
 
 header {
-  width: 1600px;
   padding-top: 24px;
   padding-bottom: 25px;
   outline: 1px solid red;
-  
 }
 
 .header-position {
