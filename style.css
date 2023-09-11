@@ -66,12 +66,11 @@ header {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-
   color: #212121;
   margin-left: 55px;
 }
 /* Пропишемо ховер (при наведені зміну коліру текста) */
-.nav-list-item:hover {
+.nav-list-item-link:hover {
   color: #2196f3;
 }
 .contacts-list {
@@ -133,6 +132,10 @@ header {
   border: none;
   padding: 6px 32px;
   color: #ffffff;
+  background-color: #2196f3;
+  width: 216px;
+  height: 50px;
+  cursor: pointer;
 }
 .lists-container {
   padding-top: 94px;
@@ -167,6 +170,8 @@ header {
 }
 .team-cards {
   display: flex;
+  margin-top: 50px;
+  justify-content: space-between;
 }
 .our-job-section {
   padding-bottom: 94px;
@@ -179,6 +184,7 @@ header {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+
 }
 /* А тепер для заголовку для іншого блоку з фотографіями кого-сь */
 .our-team-title {
@@ -206,14 +212,14 @@ header {
   color: #757575;
 }
 footer {
-  height: 250px;
-  width: 1600px;
   background-color: #2F303A;
+  height: 250px;
 }
 .h3-footer {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
+  padding-top: 60px;
 }
 /* Добавимо в футері властивості для фіз. адреси */
 .footer-subtitle {
@@ -223,6 +229,7 @@ footer {
   letter-spacing: 0.03em;
   color: #ffffff;
   font-style: normal;
+  padding-top: 20px;
 }
 /* Та властивості для телефону та пошти */
 .footer-subtitle1 {
@@ -233,7 +240,9 @@ footer {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-
+.footer-contact-item {
+  padding-top: 9px;
+}
 .qualities-list {
   display: flex;
 }
@@ -242,9 +251,12 @@ footer {
 }
 .our-job-photo-list {
   display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
 }
 .our-team-box {
   padding-top: 94px;
   padding-bottom: 94px;
+  background-color: #F5F4FA;
 }
 
