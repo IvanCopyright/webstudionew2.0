@@ -215,6 +215,9 @@ header {
   letter-spacing: 0.03em;
   color: #757575;
 }
+.clients-list {
+  display: flex;
+}
 footer {
   background-color: #2F303A;
   height: 250px;
