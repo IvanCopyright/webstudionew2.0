@@ -102,7 +102,9 @@ header {
   color: #2196f3;
 }
 .heading {
-  background-color: #2F303A;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)) ,url("./images_1/background-img.png");
+  background-position: center;
+  background-size: cover;
   padding-top: 200px;
   padding-bottom: 200px;
   /* padding-left: 452px;
@@ -215,8 +217,31 @@ header {
   letter-spacing: 0.03em;
   color: #757575;
 }
-.clients-list {
+
+.social-list {
   display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.clients-heading {
+  padding-top: 94px;
+  text-align: center;
+  color: #212121;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.08px;
+}
+.clients-section {
+  height: 372px;
+  background-color: #FFF;
+}
+.clients-list {
+  padding-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 footer {
   background-color: #2F303A;
